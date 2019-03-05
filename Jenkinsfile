@@ -6,6 +6,7 @@ pipeline {
   stages {
    stage('Init') {
 	steps {
+	 sh 'rm -rf nodejs_app'
 	 git branch: 'master',
 	 url: 'https://github.com/yosr074/nodejs_app.git'
       }
