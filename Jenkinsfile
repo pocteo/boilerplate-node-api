@@ -7,7 +7,7 @@ pipeline {
    stage('Init') {
 	steps {
 	 git branch: 'master',
-	 url: 'https://github.com/pocteo/nodejs_app.git'
+	 url: 'https://github.com/yosr074/nodejs_app.gitt'
       }
     }
 
