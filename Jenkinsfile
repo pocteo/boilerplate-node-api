@@ -13,6 +13,12 @@ pipeline {
     stage('Test') {
       steps {
         sh 'npm test'
+      }
+    }
+
+    stage('publish package to npmjs') {
+      steps {
+        sh 'npm publish --access=public'
        }
     }
   }
