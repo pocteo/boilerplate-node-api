@@ -25,7 +25,6 @@ pipeline {
 
     stage('publish package to npmjs') {
       steps {
-        sh 'npm config set registry https://www.npmjs.com/package/@yosr/nodejs_app'
         sh 'npm publish --access=public'
        }
     }
