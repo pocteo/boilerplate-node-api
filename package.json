@@ -1,6 +1,6 @@
 {
-  "name": "@yosr/chose",
-  "version": "1.0.1",
+  "name": "@zinouba/nodejs_app",
+  "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
