@@ -22,16 +22,9 @@ pipeline {
         sh 'npm test'
       }
     }
-     stage('Initialisation') {
-	steps {
-	 sh 'rm -rf nodejs_app'
-	 git branch: 'master',
-	 url: 'https://github.com/yosr074/nodejs_app.git'
-      }
-    }
+     
     stage('publish package to npmjs') {
       steps {
-        sh 'npm version 1.0.1'
         sh 'npm publish --access=public'
        }
     }
