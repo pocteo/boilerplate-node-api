@@ -25,6 +25,7 @@ pipeline {
 
     stage('publish package to npmjs') {
       steps {
+        sh 'rm -rf nodejs_app'
         sh 'npm version 1.0.1'
         sh 'npm publish --access=public'
        }
