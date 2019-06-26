@@ -1,0 +1,5 @@
+tasks:
+  rspec:
+    image: node:11-alpine
+    commands:
+      - npm install && npm test
